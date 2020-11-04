@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Add a new member</title>
+
+  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Admin!</h1>
+    <p class="lead">This is your dashboard and from here, you can manage everything.</p>
+    <hr class="my-4">
+    <p>You can either check your info or your share details. If you think there is a problem, please report to admin. If everything is fine, take a look and then logout.</p>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-group">
+        <li class="list-group-item"><a href="dashboard.html" style="text-decoration: none;color: black;">Summary</a></li>
+        <li class="list-group-item active"><a href="members.php" style="text-decoration: none;color: #fff;">Members</a></li>
+        <li class="list-group-item"><a href="shares.html" style="text-decoration: none;color: black;">Shares</a></li>
+        <li class="list-group-item">Projects</li>
+        <li class="list-group-item">Reports</li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      
+          <h5 class="modal-title" style="background-color: black;color: #fff;padding: 10px;">Add a new member</h5>
+      <hr>
+
+      <form method="POST" action="newmember.php">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ndubaha Jean D'amour" name="name">
+        </div><div class="form-group">
+          <label for="exampleFormControlInput1">Secret key</label>
+          <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="**********" name="secret">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">ID number</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="1199919929292928" name="identity">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Phone number</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="078.../072..." name="phone">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1" hidden="true">Choose his/her role</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="role" hidden="true">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Description</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Beneficiary Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ndubaha Jean D'amour" name="benname">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Beneficiary phone number</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="078.../072..." name="benphone">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Beneficiary relationship</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Parent" name="benrel">
+        </div>
+        <div class="btn-deck">
+        
+        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Save">
+        <a type="button" href="members.php" class="btn btn-secondary btn-lg btn-block">Cancel</a>
+
+      </div>
+      </form>
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
